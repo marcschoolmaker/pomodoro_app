@@ -109,7 +109,7 @@ button {
 }
 
 input:checked + .slider {
-    background-color: #2196F3;
+    background-color: #689c00;
 }
 
 input:checked + .slider:before {
@@ -198,7 +198,7 @@ body.dark-mode .time-setting input {
 }
 
 .mode-switch-btn {
-    background-color: #2196F3;
+    background-color: #c9da0b;
     color: white;
     border: none;
     border-radius: 5px;
@@ -210,14 +210,14 @@ body.dark-mode .time-setting input {
 }
 
 .mode-switch-btn:hover {
-    background-color: #0b7dda;
+    background-color: #c9da0b;
 }
 
 /* Dark mode styles pour le bouton de switch */
 body.dark-mode .mode-switch-btn {
-    background-color: #0b7dda;
+    background-color: #c9da0b;
 }
 
 body.dark-mode .mode-switch-btn:hover {
-    background-color: #0a6fc2;
+    background-color: #c9da0b;
 } 
