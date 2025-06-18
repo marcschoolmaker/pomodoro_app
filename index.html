@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pomodoro Timer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="toggle-container">
+            <label class="switch">
+                <input type="checkbox" id="darkModeToggle">
+                <span class="slider round"></span>
+            </label>
+            <span class="toggle-label">Dark Mode</span>
+        </div>
+        <button id="modeSwitchBtn" class="mode-switch-btn">Mode Pause</button>
+        <h1>Pomodoro Timer</h1>
+        <div id="timer" class="timer">25:00</div>
+        <div>
+            <button id="startBtn">Démarrer</button>
+            <button id="resetBtn">Réinitialiser</button>
+        </div>
+        <div class="time-settings">
+            <div class="time-setting">
+                <label for="workTime">Temps de travail (minutes) :</label>
+                <input type="number" id="workTime" min="1" value="25">
+            </div>
+            <div class="time-setting">
+                <label for="breakTime">Temps de pause (minutes) :</label>
+                <input type="number" id="breakTime" min="1" value="5">
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

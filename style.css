@@ -1,0 +1,223 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+.container {
+    text-align: center;
+    background-color: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.timer {
+    font-size: 4rem;
+    font-weight: bold;
+    margin: 1rem 0;
+    color: #333;
+}
+
+.mode {
+    font-size: 1.2rem;
+    color: #666;
+    margin-bottom: 1rem;
+}
+
+button {
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+    margin: 0 0.5rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#startBtn {
+    background-color: #4CAF50;
+    color: white;
+}
+
+#startBtn:hover {
+    background-color: #45a049;
+}
+
+#resetBtn {
+    background-color: #f44336;
+    color: white;
+}
+
+#resetBtn:hover {
+    background-color: #da190b;
+}
+
+.break {
+    color: #4CAF50;
+}
+
+.work {
+    color: #2196F3;
+}
+
+/* Styles pour le toggle */
+.toggle-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: .4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    transition: .4s;
+}
+
+input:checked + .slider {
+    background-color: #2196F3;
+}
+
+input:checked + .slider:before {
+    transform: translateX(26px);
+}
+
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
+
+.toggle-label {
+    margin-left: 10px;
+    font-size: 1rem;
+    color: #333;
+}
+
+/* Dark mode styles */
+body.dark-mode {
+    background-color: #333;
+    color: #fff;
+}
+
+body.dark-mode .container {
+    background-color: #444;
+    box-shadow: 0 0 10px rgba(255,255,255,0.1);
+}
+
+body.dark-mode .timer {
+    color: #fff;
+}
+
+body.dark-mode .mode {
+    color: #ccc;
+}
+
+body.dark-mode button {
+    background-color: #555;
+    color: #fff;
+}
+
+body.dark-mode button:hover {
+    background-color: #666;
+}
+
+body.dark-mode .toggle-label {
+    color: #fff;
+}
+
+.time-settings {
+    margin-top: 1rem;
+    text-align: left;
+}
+
+.time-setting {
+    margin-bottom: 0.5rem;
+}
+
+.time-setting label {
+    display: block;
+    margin-bottom: 0.25rem;
+    font-size: 0.9rem;
+    color: #666;
+}
+
+.time-setting input {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+/* Dark mode styles pour les champs de saisie */
+body.dark-mode .time-setting label {
+    color: #ccc;
+}
+
+body.dark-mode .time-setting input {
+    background-color: #555;
+    border-color: #666;
+    color: #fff;
+}
+
+.mode-switch-btn {
+    background-color: #2196F3;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 0.5rem;
+}
+
+.mode-switch-btn:hover {
+    background-color: #0b7dda;
+}
+
+/* Dark mode styles pour le bouton de switch */
+body.dark-mode .mode-switch-btn {
+    background-color: #0b7dda;
+}
+
+body.dark-mode .mode-switch-btn:hover {
+    background-color: #0a6fc2;
+} 
